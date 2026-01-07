@@ -18,7 +18,7 @@ function App() {
 
         try {
           
-          const response = await axios.post('http://localhost:8080/mailbot/api/response/generate', {
+          const response = await axios.post('https://mailbot-backend.onrender.com', {
             emailContent: emailContent,
             tone: tone
           });
